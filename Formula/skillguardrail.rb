@@ -1,26 +1,26 @@
 class Skillguardrail < Formula
   desc "Pre-install security scanner and guarded installer for Agent Skills"
   homepage "https://github.com/T-Zevin/SkillGuardrail"
-  version "0.1.3"
+  version "0.1.4"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/T-Zevin/SkillGuardrail/releases/download/v#{version}/SkillGuardrail_#{version}_darwin_arm64.tar.gz"
-      sha256 "0df7938a6cbaaa504dc0a03e81edcb4be3f10bfb18c7be0f3fa4dca06dd0a8a0"
+      sha256 "16b91a7983b06338196859e0d1841a1bc9e1bf15d9a09b54f5d58a8fe2894f37"
     else
       url "https://github.com/T-Zevin/SkillGuardrail/releases/download/v#{version}/SkillGuardrail_#{version}_darwin_amd64.tar.gz"
-      sha256 "7fe7cc2455410af1a339926b9ce85529ad5c13cc7e07a36376fc3305a27a2939"
+      sha256 "a7eeb23d0f43f1117c6df30ec830535473100f38e4372b41b13250f16ba36a5b"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/T-Zevin/SkillGuardrail/releases/download/v#{version}/SkillGuardrail_#{version}_linux_arm64.tar.gz"
-      sha256 "ea1a434dd038e181f840bbbcd7413435737ad06727eecf049f2b125c786c20c6"
+      sha256 "c555878a3a2e1248b73fc2500df340faf8ea25d1239b574eb0a865ae0157ec15"
     else
       url "https://github.com/T-Zevin/SkillGuardrail/releases/download/v#{version}/SkillGuardrail_#{version}_linux_amd64.tar.gz"
-      sha256 "5ba389c64b292b06471533c75248fb8511ce569713d4b267aca4e7a91a314dad"
+      sha256 "ad7d489c1d9b875094c72618678a2594eaff4d8e4f8e39b4e8f752f7e22131ff"
     end
   end
 
